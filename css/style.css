@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
 .background {
-    background-image: linear-gradient(to right bottom, #40eaff, #39d1e3, #31b8c8, #2aa0ae, #238994);
+    background-image: linear-gradient(to right bottom, #3b3b58, #2f2f45, #232434, #181923, #0b0b12);
 }
 
 .titulo {
@@ -13,26 +13,25 @@
 .fonte {
     font-family: 'Luckiest Guy', cursive;
     text-shadow: 3px 0px #521212, 6px 2px #521212, 5px 1px #521212, 2px 2px #521213;
-    color: #ff64c9;
+    color: #F686BD;
 }
 
 .container {
     margin: 90px auto;
-    background-color: #349aa7;
+    background-color: #7A5980;
     width: 90%;
     border: 1px solid #2c4242;
     padding: 10px 10px 40px 10px;
+    color: #ffd0d6;
 }
 .container h3 {
     font-family: 'Righteous', cursive;
     text-shadow: 2px 0px #521212, 6px 3px #521212, 5px 1px #521212, 2px 2px #521213;
-    color: #ff64c9; 
     text-align: center;
     font-size: 34px;
 }
 .container p {
     font-family: 'Righteous', cursive;
-    color: #ffd0d6;
     font-size: 30px;
     text-shadow: 0px 0px #000000, 0px 1px #000000, 2px 3px #000000, 2px 2px #000000;
     padding: 20px;
@@ -45,4 +44,64 @@
 .fotos img {
     border: 2px solid #7e0a55;
     width: 18%;
+}
+
+.tabela {
+    font-family: 'Righteous', cursive;
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+    color: #662d2d;
+}
+.tabela thead tr {
+    background-color: #303047;
+    color: #f4ac92;
+}
+.tabela, td, th {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+.tabela tr {
+    background-color: #63788a;
+    color: black;
+}
+.tabela tr:nth-child(even) {
+    background-color: #7e93a7;
+}
+.tabela th {
+    font-weight: bold;
+}
+
+.formulario {
+    width: 300px;
+    margin: auto;
+    background-color: #303047;
+    color: #f4ac92;
+    border: 1px solid #000000;
+} 
+.formulario legend {
+    background-color: #303047;
+    border: 1px solid #000000;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.formulario .aviso {
+    background-color: #39396d;
+    border-left: 5px solid #1a1a33;
+    padding: 15px;
+}
+.formulario input {
+    margin: 4px 0 10px 5px;
+}
+.formulario .campo {
+    width: 100%;
+    display: flex;
+    margin: 10px 5px;
 }

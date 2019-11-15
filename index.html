@@ -23,16 +23,85 @@
     </section>
 
     <section class="container">
-        <h3>QUITUTUES</h3>
-        <table>
-            <tr>
-                <th>Categoria</th>
-                <th>Nome</th>
-                <th>Valor unitario</th>
-            </tr>
+        <h3>QUITUTES</h3>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Nome</th>
+                    <th>Valor unitário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Doces</td>
+                    <td>Churros</td>
+                    <td>R$ 0.70</td>
+                </tr>
+                <tr>
+                    <td>Doces</td>
+                    <td>Bolo</td>
+                    <td>R$ 20.00</td>
+                </tr>
+                <tr>
+                    <td>Doces</td>
+                    <td>Brigadeiro</td>
+                    <td>R$ 0.30</td>
+                </tr>
+                <tr>
+                    <td>Salgados</td>
+                    <td>Coxinha</td>
+                    <td>R$ 1.00</td>
+                </tr>
+                <tr>
+                    <td>Salgados</td>
+                    <td>Pastel</td>
+                    <td>R$ 1.00</td>
+                </tr>
+                <tr>
+                    <td>Salgados</td>
+                    <td>Sanduiche</td>
+                    <td>R$ 1.30</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
+    <section class="container" style="width: 50%;">
+        <h3>PEDIDO</h3>
+        
+        <fieldset class="formulario">
+            <legend>Faça seu pedido aqui:</legend>
+            <form>
+                <label for="iNome">Nome *</label>
+                <input name="iNome" type="text"/>
 
+                <label for="iEntrega">Entrega *</label>
+                <input name="iEntrega" type="date"/>
+                <input name="iHora" type="text" style="width:70px;" placeholder="Hora"/>
+            
+                <label for="iQuitutes">Quitutes *</label>
+                <input name="iQuitutes" type="select">
+
+                <label for="iQuantidade">Quantidade *</label>
+                <input name="iQuantidade" type="number">
+
+                <div class="aviso">
+                    Descreva o pedido (ao deixar em branco, o pedido será sortido).
+                </div>
+                
+                <label for="iEndereco">Endereço *</label>
+                <input name="iEndereco" type="text">
+                
+                <div>
+                    <input name="retirar" type="checkbox">
+                    <label for="retirar">Desejo retirar em mãos</label>
+                </div>
+
+                <label for="iTelefone">Telefone *</label>
+                <input name="iTelefone" type="text">
+            </form>
+        </fieldset>
+    </section>
 </body>
 </html>
