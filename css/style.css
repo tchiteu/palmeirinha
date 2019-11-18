@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
-
+body {
+    font-family: 'Tahoma', cursive;
+    margin: 0;
+}
 .background {
     background-image: linear-gradient(to right bottom, #3b3b58, #2f2f45, #232434, #181923, #0b0b12);
 }
@@ -11,7 +12,7 @@
 }
 
 .fonte {
-    font-family: 'Luckiest Guy', cursive;
+    
     text-shadow: 3px 0px #521212, 6px 2px #521212, 5px 1px #521212, 2px 2px #521213;
     color: #F686BD;
 }
@@ -25,13 +26,11 @@
     color: #ffd0d6;
 }
 .container h3 {
-    font-family: 'Righteous', cursive;
     text-shadow: 2px 0px #521212, 6px 3px #521212, 5px 1px #521212, 2px 2px #521213;
     text-align: center;
     font-size: 34px;
 }
 .container p {
-    font-family: 'Righteous', cursive;
     font-size: 30px;
     text-shadow: 0px 0px #000000, 0px 1px #000000, 2px 3px #000000, 2px 2px #000000;
     padding: 20px;
@@ -47,7 +46,6 @@
 }
 
 .tabela {
-    font-family: 'Righteous', cursive;
     border-collapse: collapse;
     width: 70%;
     margin: auto;
@@ -100,8 +98,39 @@
 .formulario input {
     margin: 4px 0 10px 5px;
 }
-.formulario .campo {
+.formulario input[type="date"] {
+    width: 123px;
+}
+
+.campo {
+    width: 100%;
+    margin-top: 10px;
+}
+.campo input {
+    float: right;
+}
+
+.botoes {
     width: 100%;
     display: flex;
-    margin: 10px 5px;
+    justify-content: space-around;
+}
+.botoes input {
+    color: white;
+    padding: 5px 10px;
+}
+.botoes input[type="reset"] {
+    background-color: #973f3f;
+    border: 1px solid #350b0b;
+}
+.botoes input[type="submit"] {
+    background-color: #30883e;
+    border: 1px solid #0a110b;
+}
+
+footer {
+    height: 20px;
+    background-color: #1d1427;
+    text-align: center;
+    color: wheat;
 }

@@ -73,35 +73,56 @@
         <fieldset class="formulario">
             <legend>Faça seu pedido aqui:</legend>
             <form>
-                <label for="iNome">Nome *</label>
-                <input name="iNome" type="text"/>
+                <div class="campo">
+                    <label for="iNome">Nome *</label>
+                    <input name="iNome" type="text"/>
+                </div>
 
-                <label for="iEntrega">Entrega *</label>
-                <input name="iEntrega" type="date"/>
-                <input name="iHora" type="text" style="width:70px;" placeholder="Hora"/>
-            
-                <label for="iQuitutes">Quitutes *</label>
-                <input name="iQuitutes" type="select">
+                <div class="campo">
+                    <label for="iEntrega">Entrega *</label>
+                    <input name="iHora" type="text" style="width:36px; height: 18px;" placeholder="Hora"/>
+                    <input name="iEntrega" type="date"/>
+                </div>
+                
+                <div class="campo">
+                    <label for="iQuitutes">Quitutes *</label>
+                    <input name="iQuitutes" type="select">
+                </div>
 
-                <label for="iQuantidade">Quantidade *</label>
-                <input name="iQuantidade" type="number">
+                <div class="campo">
+                    <label for="iQuantidade">Quantidade *</label>
+                    <input name="iQuantidade" type="number">
+                </div>
 
                 <div class="aviso">
                     Descreva o pedido (ao deixar em branco, o pedido será sortido).
                 </div>
                 
-                <label for="iEndereco">Endereço *</label>
-                <input name="iEndereco" type="text">
+                <div class="campo">
+                    <label for="iEndereco">Endereço *</label>
+                    <input name="iEndereco" type="text">
+                </div>
                 
                 <div>
                     <input name="retirar" type="checkbox">
                     <label for="retirar">Desejo retirar em mãos</label>
                 </div>
 
-                <label for="iTelefone">Telefone *</label>
-                <input name="iTelefone" type="text">
+                <div class="campo">
+                    <label for="iTelefone">Telefone *</label>
+                    <input name="iTelefone" type="text">
+                </div>
+
+                <div class="botoes">
+                    <input value="Limpar" type="reset">
+                    <input type="submit">
+                </div>
             </form>
         </fieldset>
     </section>
+
+    <footer>
+        Desenvolvido por Matheus 2019
+    </footer>
 </body>
 </html>
